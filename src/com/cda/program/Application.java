@@ -6,6 +6,7 @@ import java.util.List;
 
 import com.cda.data.Employer;
 import com.cda.data.Etudiant;
+import com.cda.data.Personne;
 import com.cda.data.Professeur;
 
 public class Application {
@@ -57,6 +58,24 @@ public class Application {
 		Collections.sort(vProfesseurs);
 		System.out.println("\n--- après tri :");
 		iterateList(vProfesseurs);
+		System.out.println("\n**\n");
+		
+		List<Personne> vPersonnes = new ArrayList<>();
+		vPersonnes.add(p1);
+		vPersonnes.add(ep1);
+		vPersonnes.add(ep2);
+		vPersonnes.add(p2);
+		vPersonnes.add(e1);
+		vPersonnes.add(e2);
+		vPersonnes.add(ep3);
+		vPersonnes.add(p3);
+		vPersonnes.add(e3);
+		
+		System.out.println("--- Personnes par ordre d'insertion :");
+		iterateList(vPersonnes);
+		Collections.sort(vPersonnes);
+		System.out.println("\n--- après tri :");
+		iterateList(vPersonnes);
 		System.out.println("\n**\n");
 	}
 

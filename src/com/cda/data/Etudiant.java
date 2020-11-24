@@ -1,6 +1,6 @@
 package com.cda.data;
 
-public class Etudiant extends Personne implements Comparable<Etudiant> {
+public class Etudiant extends Personne {
 	
 	private final String cne;
 	
@@ -14,7 +14,6 @@ public class Etudiant extends Personne implements Comparable<Etudiant> {
 		return "Je suis l'étudiant "+ super.toString() + " mon cne est "+this.cne;
 	}
 
-	@Override
 	public int compareTo(Etudiant pAutreEtudiant) {
 		return this.prenom.compareTo(pAutreEtudiant.prenom);
 	}

@@ -14,12 +14,11 @@ public class Professeur  extends Employer {
 		return "Je suis le Professeur "+ this.prenom +"  "+ this.nom + " mon salaire est "+this.salaire+" ma spécialité est "+this.specialite;
 	}
 	
-	@Override
-	public int compareTo(Employer pAutreEmployer) {
-		int resultatComparaisonPrenom = this.prenom.compareTo(pAutreEmployer.prenom);
+	public int compareTo(Professeur pAutreProfesseur) {
+		int resultatComparaisonPrenom = this.prenom.compareTo(pAutreProfesseur.prenom);
 		
 		if(resultatComparaisonPrenom == 0) {
-			return Integer.compare(pAutreEmployer.salaire,this.salaire);
+			return Integer.compare(pAutreProfesseur.salaire,this.salaire);
 		} else {
 			return resultatComparaisonPrenom;
 		}
