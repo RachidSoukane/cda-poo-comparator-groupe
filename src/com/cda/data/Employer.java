@@ -1,6 +1,6 @@
 package com.cda.data;
 
-public class Employer  extends Personne {
+public class Employer  extends Personne implements Comparable<Employer> {
 	
 	protected int salaire;
 	
@@ -12,6 +12,11 @@ public class Employer  extends Personne {
 	@Override
 	public String toString() {
 		return "Je suis l'employer "+ super.toString() + " mon salaire est "+this.salaire;
+	}
+
+	@Override
+	public int compareTo(Employer pAutreEmployer) {
+		return Integer.compare(this.salaire, pAutreEmployer.salaire);
 	}
 	
 }

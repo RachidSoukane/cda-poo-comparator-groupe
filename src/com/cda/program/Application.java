@@ -21,7 +21,7 @@ public class Application {
 		vEtudiants.add(e2);
 		vEtudiants.add(e3);
 		
-		System.out.println("--- par ordre d'insertion :");
+		System.out.println("--- Etudiants par ordre d'insertion :");
 		iterateList(vEtudiants);
 		Collections.sort(vEtudiants);
 		System.out.println("\n--- après tri :");
@@ -39,15 +39,25 @@ public class Application {
 		vEmployers.add(ep2);
 		vEmployers.add(ep3);
 		
+		System.out.println("--- Employers par ordre d'insertion :");
 		iterateList(vEmployers);
+		Collections.sort(vEmployers,Collections.reverseOrder());
+		System.out.println("\n--- après tri :");
+		iterateList(vEmployers);
+		System.out.println("\n**\n");
 		
 		
 		Professeur p1 = new Professeur("Oussama", "Savaton", 2500, "JAVA/JEE");
 		Professeur p2 = new Professeur("Thomas", "Legrand", 2600, "Mathèmatique");		Professeur p3 = new Professeur("Oussama", "Stili", 3000, "JAVA/JEE");
 
-		List<Professeur> vProfesseurs = List.of(p1, p2, p3);
+		ArrayList<Professeur> vProfesseurs = new ArrayList<>(List.of(p1, p2, p3));
 		
+		System.out.println("--- Professeurs par ordre d'insertion :");
 		iterateList(vProfesseurs);
+		Collections.sort(vProfesseurs);
+		System.out.println("\n--- après tri :");
+		iterateList(vProfesseurs);
+		System.out.println("\n**\n");
 	}
 
 	public static <T> void iterateList(List<T> anyList) {
