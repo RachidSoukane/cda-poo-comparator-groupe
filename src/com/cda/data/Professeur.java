@@ -1,5 +1,5 @@
 package com.cda.data;
 
-public class Professeur {
+public class Professeur  extends Employer  {
 
 }

@@ -1,5 +1,5 @@
 package com.cda.data;
 
-public class Personne {
+public abstract class Personne {
 
 }

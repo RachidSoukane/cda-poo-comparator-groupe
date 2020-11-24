@@ -1,5 +1,5 @@
 package com.cda.data;
 
-public class Etudiant {
+public class Etudiant extends Personne {
 
 }
