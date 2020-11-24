@@ -1,6 +1,7 @@
 package com.cda.program;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 import com.cda.data.Employer;
@@ -20,8 +21,13 @@ public class Application {
 		vEtudiants.add(e2);
 		vEtudiants.add(e3);
 		
+		System.out.println("--- par ordre d'insertion :");
+		iterateList(vEtudiants);
+		Collections.sort(vEtudiants);
+		System.out.println("\n--- après tri :");
 		iterateList(vEtudiants);
 		
+		System.out.println("\n**\n");
 		
 		ArrayList<Employer> vEmployers = new ArrayList<>();
 		
