@@ -9,5 +9,8 @@ public class Etudiant extends Personne {
 		this.cne = pCne;
 	}
 
-
+	@Override
+	public String toString() {
+		return "Je suis l'étudiant "+ super.toString() + " mon cne est "+this.cne;
+	}
 }

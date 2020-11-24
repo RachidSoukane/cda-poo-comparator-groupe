@@ -18,5 +18,10 @@ public class Personne {
 		return prenom;
 	}
 
+	@Override
+	public String toString() {
+		return nom + " " + prenom;
+	}
+	
 }
 

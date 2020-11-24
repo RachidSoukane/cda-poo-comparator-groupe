@@ -8,4 +8,10 @@ public class Employer  extends Personne {
 		super(pNom, pPrenom);
 		this.salaire = pSalaire;
 	}
+
+	@Override
+	public String toString() {
+		return "Je suis l'employer "+ super.toString() + " mon salaire est "+this.salaire;
+	}
+	
 }
