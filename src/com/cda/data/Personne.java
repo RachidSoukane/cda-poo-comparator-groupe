@@ -2,8 +2,8 @@ package com.cda.data;
 
 public class Personne {
 	// TODO final ou pas final discussion !
-	private final String nom;
-	private final String prenom;
+	protected final String nom;
+	protected final String prenom;
 	
 	public Personne(String pNom, String pPrenom) {
 		this.nom = pNom;

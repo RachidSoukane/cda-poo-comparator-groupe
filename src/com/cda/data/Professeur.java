@@ -11,7 +11,7 @@ public class Professeur  extends Employer  {
 	
 	@Override
 	public String toString() {
-		return "Je suis le Professeur "+ super.toString() + " mon salaire est "+this.salaire+" ma spécialité est "+this.specialite;
+		return "Je suis le Professeur "+ this.nom +"  "+ this.prenom + " mon salaire est "+this.salaire+" ma spécialité est "+this.specialite;
 	}
 	
 }
