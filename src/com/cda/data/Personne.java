@@ -5,9 +5,9 @@ public class Personne {
 	protected final String nom;
 	protected final String prenom;
 	
-	public Personne(String pNom, String pPrenom) {
-		this.nom = pNom;
+	public Personne(String pPrenom, String pNom) {
 		this.prenom = pPrenom;
+		this.nom = pNom;
 	}
 
 	public String getNom() {
@@ -20,7 +20,7 @@ public class Personne {
 
 	@Override
 	public String toString() {
-		return nom + " " + prenom;
+		return this.prenom + " " + this.nom;
 	}
 	
 }

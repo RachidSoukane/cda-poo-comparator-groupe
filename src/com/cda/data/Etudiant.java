@@ -4,8 +4,8 @@ public class Etudiant extends Personne implements Comparable<Etudiant> {
 	
 	private final String cne;
 	
-	public Etudiant(String pNom, String pPrenom, String pCne) {
-		super(pNom,pPrenom);
+	public Etudiant(String pPrenom, String pNom, String pCne) {
+		super(pPrenom,pNom);
 		this.cne = pCne;
 	}
 

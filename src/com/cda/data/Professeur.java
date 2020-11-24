@@ -4,14 +4,14 @@ public class Professeur  extends Employer {
 
 	private String specialite;
 	
-	public Professeur(String pNom, String pPrenom, int pSalaire, String pSpecialite) {
-		super(pNom, pPrenom, pSalaire);
+	public Professeur(String pPrenom, String pNom, int pSalaire, String pSpecialite) {
+		super(pPrenom, pNom, pSalaire);
 		this.specialite = pSpecialite;
 	}
 	
 	@Override
 	public String toString() {
-		return "Je suis le Professeur "+ this.nom +"  "+ this.prenom + " mon salaire est "+this.salaire+" ma spécialité est "+this.specialite;
+		return "Je suis le Professeur "+ this.prenom +"  "+ this.nom + " mon salaire est "+this.salaire+" ma spécialité est "+this.specialite;
 	}
 	
 	@Override
